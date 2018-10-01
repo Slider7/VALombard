@@ -1,0 +1,72 @@
+header[role="banner"] {
+  #logo-main {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+#main-nav{
+  background: transparent;
+  border: none;
+}
+
+#main-nav .navbar-nav { 
+  width: 100%;
+  text-align: center;
+ }
+ 
+.jumbotron {
+  background: url("../img/diamond1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100vh;
+}
+
+#section-description{
+background: url("../img/diamond2.jpeg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100vh;	
+}
+
+@media only screen and (max-width: 539px) {
+  .jumbotron {
+  	background: none;
+    min-height: 100vh;
+  }
+  
+  #section-description{
+  	background: none;
+  }
+
+}
+section {
+  padding-top: 4rem;
+}
+#section-newsletter {
+  padding-top: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', sans-serif;
+}
+
+.about-text{
+  font-family: 'Merriweather', sans-serif;
+  color: #bf953f;
+  text-shadow: 0 2px 1px #663300;
+}
+
+.about-p, #section-description p{
+  font-family: 'Merriweather', sans-serif;
+  text-shadow: 0 0px 0px #663300;
+  color: #663300;
+}
+
+.logo{
+	height: 100px;
+}
