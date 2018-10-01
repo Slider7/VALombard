@@ -26,7 +26,7 @@ nav{
   min-height: 100vh;
 }
 
-#section-description{
+.about-img{
 background: url("../img/diamond2.jpeg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
