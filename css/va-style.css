@@ -1,20 +1,21 @@
-header[role="banner"] {
-  #logo-main {
-    display: block;
-    margin: 10px auto;
+nav{
+  font-family: 'Merriweather', sans-serif;
+  background-color: rgba(200, 200, 200, 0.7);
+}
+
+
+
+@media (min-width: 540px) {
+  .navbar .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav li{
+    display: inline-block;
+    float: none
   }
 }
 
-#main-nav{
-  background: transparent;
-  border: none;
-}
-
-#main-nav .navbar-nav { 
-  width: 100%;
-  text-align: center;
- }
- 
 .jumbotron {
   background: url("../img/diamond1.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -31,23 +32,24 @@ background: url("../img/diamond2.jpeg") no-repeat center center fixed;
   min-height: 100vh;	
 }
 
-@media only screen and (max-width: 539px) {
+@media only screen and (max-width: 540px) {
   .jumbotron {
   	background: none;
     min-height: 100vh;
   }
-  
   #section-description{
   	background: none;
   }
-
 }
+
 section {
   padding-top: 4rem;
 }
+
 #section-newsletter {
   padding-top: 0;
 }
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -67,6 +69,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #663300;
 }
 
-.logo{
+#logo-main{
 	height: 100px;
 }
