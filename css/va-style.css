@@ -1,9 +1,11 @@
 nav{
   font-family: 'Merriweather', sans-serif;
-  background-color: rgba(200, 200, 200, 0.7);
 }
 
-
+.nav-container{
+  background-color: rgba(50, 50, 70, 0.8);
+  margin-top: -8px;
+}
 
 @media (min-width: 540px) {
   .navbar .navbar-nav {
