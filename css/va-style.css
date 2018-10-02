@@ -83,7 +83,7 @@ nav{
   font-size: 1.2em;
 }
 
-#section-description a, a:link{
+#a-rules a, #a-rules a:link{
   font-family: 'Merriweather', sans-serif;
   font-style: italic;
   color: #663300;
@@ -91,6 +91,21 @@ nav{
   font-size: 0.9em;
 }
 
-#section-description a:hover{
+.rules-ol{
+  font-family: 'Merriweather', sans-serif;
+  text-align: justify;
   color: #663300;
+  font-size: 1.0em;
+  line-height: 2em;
+}
+
+#a-rules a:hover{
+  color: #663300;
+}
+
+.zaim-img{
+  width: 70%; 
+}
+.zaim-img80{
+  width: 80%; 
 }
