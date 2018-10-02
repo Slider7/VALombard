@@ -26,12 +26,12 @@ nav{
   min-height: 100vh;
 }
 
+#section-description{
+  min-height: 100vh; 
+}
+
 .about-img{
-background: url("../img/diamond2.jpeg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  min-height: 100vh;	
+  width: 100%;
 }
 
 @media only screen and (max-width: 540px) {
@@ -45,7 +45,7 @@ background: url("../img/diamond2.jpeg") no-repeat center center fixed;
 }
 
 section {
-  padding-top: 4rem;
+  padding-top: 120px;
 }
 
 #section-newsletter {
@@ -53,7 +53,7 @@ section {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', sans-serif;
@@ -65,12 +65,13 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 0 2px 1px #663300;
 }
 
-.about-p, #section-description p{
+.about-text-p{
   font-family: 'Merriweather', sans-serif;
-  text-shadow: 0 0px 0px #663300;
+  text-align: justify;
   color: #663300;
+  font-size: 1.2em;
 }
 
-#logo-main{
-	height: 100px;
+.navbar-brand{
+  margin-left: 10px;
 }
