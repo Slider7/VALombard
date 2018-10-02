@@ -1,3 +1,14 @@
+body {
+  font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', sans-serif;
+}
+
+section {
+  padding-top: 120px;
+}
+
 nav{
   font-family: 'Merriweather', sans-serif;
 }
@@ -5,6 +16,15 @@ nav{
 .nav-container{
   background-color: rgba(50, 50, 70, 0.8);
   margin-top: -8px;
+}
+
+.navbar-brand{
+  margin-left: 10px;
+}
+.nav-tel{
+	font-size: 0.8em;
+	width: 190px;
+	padding: 2px;
 }
 
 @media (min-width: 768px) {
@@ -50,21 +70,6 @@ nav{
   }
 }
 
-section {
-  padding-top: 120px;
-}
-
-#section-newsletter {
-  padding-top: 0;
-}
-
-body {
-  font-family: sans-serif;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', sans-serif;
-}
-
 .about-text{
   font-family: 'Merriweather', sans-serif;
   color: #bf953f;
@@ -78,11 +83,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2em;
 }
 
-.navbar-brand{
-  margin-left: 10px;
+#section-description a, a:link{
+  font-family: 'Merriweather', sans-serif;
+  font-style: italic;
+  color: #663300;
+  text-shadow: 0 2px 1px #bf953f;
+  font-size: 0.9em;
 }
-.nav-tel{
-	font-size: 0.8em;
-	width: 190px;
-	padding: 2px;
+
+#section-description a:hover{
+  color: #663300;
 }
