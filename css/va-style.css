@@ -7,7 +7,7 @@ nav{
   margin-top: -8px;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 768px) {
   .navbar .navbar-nav {
     width: 100%;
     text-align: center;
@@ -16,6 +16,12 @@ nav{
     display: inline-block;
     float: none
   }
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar-brand {
+        display: none;
+    }
 }
 
 .jumbotron {
@@ -34,7 +40,7 @@ nav{
   width: 100%;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 768px) {
   .jumbotron {
   	background: none;
     min-height: 100vh;
@@ -74,4 +80,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-brand{
   margin-left: 10px;
+}
+.nav-tel{
+	font-size: 0.8em;
+	width: 190px;
+	padding: 2px;
 }
