@@ -83,6 +83,19 @@ nav{
   font-size: 1.2em;
 }
 
+.card-header{
+  background-color: #bf953f;
+}
+
+.btn-brown{
+  background-color: #663300;
+  color: #fff; 
+}
+
+.text10{
+  font-size: 1.0em;
+}
+
 #a-rules a, #a-rules a:link{
   font-family: 'Merriweather', sans-serif;
   font-style: italic;

@@ -38,7 +38,7 @@
 	          <a class="nav-link" href="#section-services">Услуги</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#section-contact">Контакты</a>
+	          <a class="nav-link" href="#section-feedback">Контакты</a>
 	        </li>
 	      </ul>
 	      
@@ -149,7 +149,7 @@
         <div class="row">
         	<p class="rules-ol text-uppercase">Основная информация из Правил VA Lombard:</p>
           <div class="col-12 d-flex flex-column align-items-center">
-            <ol class="rules-ol">
+            <ol class="rules-ol about-text-p">
             	<li>Займ предоставляется только при наличии удостоверения личности, паспорта, водительского удостоверения.</li>
 							<li>Займ предоставляется на 60 календарных дней.</li> 
 							<li>Вы можете погасить займ досрочно полностью либо частично.</li> 
@@ -170,12 +170,12 @@
         <div class="row">
           <div class="col-12 col-md-6 mb-4">
             <div class="card card-outline-success">
-              <div class="card-header bg-success text-white text-center">
+              <div class="card-header text-white text-center">
                 <h2>Займ под залог ювелирных изделий &nbsp&nbsp<i class="fa fa-gem"></i></h2>
               </div>
               <div class="card-body">
               	<img src="img/diamond22.jpg" class="img-thumbnail mx-auto d-block zaim-img">
-                <p class="card-text text-justify">
+                <p class="card-text text-justify about-text-p text10">
 									Займ под залог ювелирных изделий возможен для лиц, достигших 18-летнего возраста при наличии документа, удостоверяющего личность. 
 									<br>Займ удобен для всех физических лиц, нуждающихся в денежных средствах. Процедура оценки и оформления займа не требует дополнительных документов, кроме документа, удостоверяющего личность, и не занимает более 5 минут. 
 								</p>
@@ -184,21 +184,23 @@
           </div>
           <div class="col-12 col-md-6 mb-4">
             <div class="card card-outline-warning">
-              <div class="card-header bg-warning text-white text-center">
+              <div class="card-header text-white text-center">
                 <h2>Займ под залог автомобиля<br><i class="fa fa-car"></i></h2>
                 
               </div>
               <div class="card-body">
               	<img src="img/car-best.jpg" class="img-thumbnail mx-auto d-block zaim-img80">
-                <p class="card-text text-justify">
+                <p class="text-justify about-text-p text10">
 									Займ под залог автомобиля без права вождения возможен для собственника транспортного средства не ранее 2000 года выпуска при наличии следующих документов: 
-									<ol>
+								</p>
+									<ol class="about-text-p text10">
 										<li>Документа, удостоверяющего личность,</li>
 										<li>Технического паспорта на автомобиль,</li>
 										<li>Справки об отсутствии обременений с ДВД РК,</li>
 										<li>Нотариально-заверенная доверенность на представителя Ломбарда на продажу автомобиля в случае нарушения сроков возврата займа,</li>
 										<li>Нотариально-заверенное согласие супруги (-а) на предоставление автомобиля в качестве Залога и в случае нарушения сроков возврата займа на его внесудебную реализацию.</li>  
 									</ol>
+								<p class="text-justify about-text-p text10">	
 									Оценка автомобиля проводится сотрудником Ломбарда на основании технических характеристик.
                 </p>
               </div>
@@ -206,24 +208,64 @@
           </div>
         </div>
       </section>
-    <section id="section-feedback" class="bg-secondary">
-      <div class="container">
-				<!-- Default form contact -->
-				<form class="text-center border border-light p-5">
-				    <p class="h4 mb-4">Contact us</p>
-				    <!-- Name -->
-				    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
-				    <!-- Email -->
-				    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
-				    <!-- Message -->
-				    <div class="form-group">
-				        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
-				    </div>
-				    <!-- Send button -->
-				    <button class="btn btn-info btn-block" type="submit">Send</button>
-				</form>
-				<!-- Default form contact -->
+
+    <section id="section-feedback" class="container">
+ 	    <!--Section heading-->
+	    <h2 class="about-text text-center my-4">Наши контакты</h2>
+	    <!--Section description-->
+	    <p class="text-center w-responsive mx-auto mb-5 about-text-p">Если у Вас есть вопросы к нам, просим позвонить по указанным номерам телефонов или воспользоваться формой обратной связи:</p>
+
+			<div class="row">
+        <div class="col-12">
+            <div class="alert alert-success contact_msg" style="display: none" role="alert">
+                Ваше сообщение успешно отправлено. Спасибо!
+            </div>
+        </div>
       </div>
+	    <div class="row about-text-p text10">
+	      <!--Grid column-->
+        <div class="col-md-6 mx-5 mb-md-0 mb-5">
+<!-- ajax contact form -->
+					<form class="contact_form" method="post" action="contact.php">
+					    <!-- Element of the ajax contact form -->
+					    <div class="row">
+					        <div class="col-md-6 form-group">
+					            <input name="name" type="text" class="form-control" placeholder="Ваше ФИО" required>
+					        </div>
+					        <div class="col-12 form-group">
+					            <textarea name="message" class="form-control" rows="5" placeholder="Ваш вопрос/сообщение" required></textarea>
+					        </div>
+					        <div class="col-12">
+					            <input name="submit" type="submit" class="btn btn-brown" value="Отправить">
+					        </div>
+					    </div>
+					</form>
+<!-- Ending of ajax contact form -->
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-4 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fa fa-map-marker fa-2x"></i>
+                    <p>040000, г.Талдыкорган, <br>ул.Кабанбай батыра 60А (ост."Фиалка")</p>
+                </li>
+
+                <li><i class="fa fa-phone mt-2 fa-2x"></i>
+                    <p>
+           		      	<a href="tel:+7(7282)241101">тел.: +7 (7282) 24 11 01</a><br>
+      								<a href="tel:+7(700)4271787">моб.: +7 (700) 427 17 87</a>
+										</p>
+                </li>
+
+                <li><i class="fa fa-envelope mt-2 fa-2x"></i>
+                    <p>valombard@mail.ru</p>
+                </li>
+            </ul>
+        </div>
+	        <!--Grid column-->
+	      </div>
+
     </section>
 
     <footer class="bg-light">
@@ -232,7 +274,7 @@
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js" integrity="sha256-MMt0/21G3z0Zg4ET1kI3HC9npItDowkitRDVr0FhCxA=" crossorigin="anonymous"></script>
@@ -240,7 +282,41 @@
     <script type="text/javascript">
       $(function () {
         var scroll = new SmoothScroll('a[href*="#section-"]');
-      });
+
+			  var form = $('.contact_form'),
+			      message = $('.contact_msg'),
+			      form_data;
+			  // Success function
+			  function done_func(response) {
+			      message.fadeIn().removeClass('alert-danger').addClass('alert-success');
+			      message.text(response);
+			      setTimeout(function () {
+			          message.fadeOut();
+			      }, 2000);
+			      form.find('input:not([type="submit"]), textarea').val('');
+			  }
+			  // fail function
+			  function fail_func(data) {
+			      message.fadeIn().removeClass('alert-success').addClass('alert-success');
+			      message.text(data.responseText);
+			      setTimeout(function () {
+			          message.fadeOut();
+			      }, 3000);
+			  }
+			  
+			  form.submit(function (e) {
+			      e.preventDefault();
+			      form_data = $(this).serialize();
+			      $.ajax({
+			          type: 'POST',
+			          url: form.attr('action'),
+			          data: form_data
+			      })
+			      .done(done_func)
+			      .fail(fail_func);
+			  });
+
+			});
     </script>
 
   </body>
