@@ -35,12 +35,12 @@
         } else {
             # Set a 500 (internal server error) response code.
             http_response_code(500);
-            echo "Ошибка! Something went wrong, we couldn't send your message.";
+            echo "Ошибка! Что-то пошло не так. Ваше сообщение не отправлено.";
         }
 
         } else {
             # Not a POST request, set a 403 (forbidden) response code.
             http_response_code(403);
-            echo "There was a problem with your submission, please try again.";
+            echo "Ошибка при отправке, попробуйте еще раз.";
         }
 ?>
