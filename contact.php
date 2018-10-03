@@ -1,13 +1,8 @@
 <?php
-ini_set( 'SMTP', 'smtp.telecom.kz' ); // must be set to your own local ISP
-ini_set( 'smtp_port', '25' ); // assumes no authentication (passwords) required 
-ini_set( 'sendmail_from', 'VA-lombard@site.kz' ); // can be any e-mail address, but must be set
-
-
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         # FIX: Replace this email with recipient email
-        $mail_to = "demo@gmail.com";
+        $mail_to = "valombard@mail.ru";
         
         # Sender Data
         $subject = "Сообщение от посетителя сайта VA Lombard";
