@@ -2,12 +2,16 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         # FIX: Replace this email with recipient email
-        $mail_to = "valombard@mail.ru";
-        
+        $mail_to = "kemalsh771@gmail.com";
+		$host = $_SERVER['HTTP_HOST'];
+		$header = "Content-type: text/html\n";
+		$header .= "From: <noreply@$host>\n";
+			
         # Sender Data
-        $subject = "Сообщение от посетителя сайта VA Lombard";
+        $subject = "Сообщение от посетителя сайта $host";
         $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
-        $email = "site@valombard.kz";/*filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);*/
+        $email = "noreply@$host";
+		/*filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);*/
         $message = trim($_POST["message"]);
         
         if ( empty($name) OR empty($message)) {
@@ -18,16 +22,10 @@
         }
         
         # Mail Content
-        $content = "Имя: $name\n";
-        $content .= "Email: $email\n\n";
-        $content .= "Сообщение:\n$message\n";
-
-        # email headers.
-        $headers = "From: $name &lt;$email&gt;";
+		$content = "Имя: $name\n"."\nСообщение:\n$message\n";
 
         # Send the email.
-        $success = mail($mail_to, $subject, $content, $headers);
-          if ($success) {
+          if (mail($mail_to, $subject, $content, $header)) {
               # Set a 200 (okay) response code.
               http_response_code(200);
               echo "Спасибо! Ваше сообщение успешно отправлено.";
