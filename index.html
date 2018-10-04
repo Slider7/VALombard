@@ -68,7 +68,7 @@
     			<h2 class="about-text mb-5">О компании</h2>
     		</div>
       	<div class="row d-flex align-items-center about-text-p">
-					<div class="col col-sm-6">
+					<div class="col col-md-6">
 						<p class="lead">VA Lombard создан в 2017 году в городе Талдыкорган. </p>
 						<p><strong>Наши ценности</strong>: </p>
 						<p><strong>Справедливая оценка.</strong> Залог оценивается исходя из Ваших ожиданий и наших расценок. </p>
@@ -77,16 +77,15 @@
 						<p><strong>Контроль качества и безопасности.</strong> Качество принятого Залога проверяется при оценке и при Ревизии, и находится в безопасности. </p>
 						<p id="a-rules" class="text-center"><a href="#section-features">Правила проведения ломбардных операций VA Lombard</a></p>
 					</div>
-					<div class="col col-sm-6 d-none d-sm-block">
+					<div class="col col-md-6 d-none d-md-block">
 						<img src="img/gold1.jpg" class="about-img rounded" alt="About image">
 					</div>	      		
       	</div>
       </section>
 
       <section id="section-showcase" class="container">
-        <h2 class="display-4 text-center about-text">VA Lombard</h2>
-        <p class="text-center about-text-p">Информация о нашей деятельности</p>
-        <div id="carousel" class="carousel carousel-fade  d-flex align-items-center" data-ride="carousel">
+        <h2 class="text-center about-text">Информация о нашей деятельности</h2>
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carousel" data-slide-to="0" class="active"></li>
             <li data-target="#carousel" data-slide-to="1"></li>
@@ -95,31 +94,31 @@
           </ol>
           <div class="carousel-inner text-center" role="listbox">
             <div class="carousel-item active">
-              <img src="img/s01.png" alt="Slide #1" class="d-block mx-auto">
+              <img src="img/s01.png" alt="Slide #1" class="d-block mx-auto img-fluid">
               <div class="carousel-caption">
-                <h3 class="display-4">Миссия</h3>
-                <p>Справедливость и лояльность к клиентам.</p>
+                <!-- <h3>Миссия</h3>
+                <p>Справедливость и лояльность к клиентам</p> -->
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/s02.jpg" alt="Slide #2" class="d-block mx-auto">
+              <img src="img/s02.jpg" alt="Slide #2" class="d-block mx-auto img-fluid">
               <div class="carousel-caption">
-                <h3 class="display-4">Девиз</h3>
-                <p>Время- деньги.</p>
+                <!-- <h3>Девиз</h3> -->
+                <p class="lead">Время- деньги</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/s03.jpg" alt="Slide #3" class="d-block mx-auto">
+              <img src="img/s03.jpg" alt="Slide #3" class="d-block mx-auto img-fluid">
               <div class="carousel-caption">
-                <h3 class="display-4">Займы</h3>
-                <p>Займ под залог ювелирных изделий.</p>
+                <!-- <h3>Займы</h3> -->
+                <p class="lead">Займ под залог ювелирных изделий</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="img/s04.jpg" alt="Slide #4" class="d-block mx-auto">
+              <img src="img/s04.jpg" alt="Slide #4" class="d-block mx-auto img-fluid">
               <div class="carousel-caption">
-                <h3 class="display-4">Займы</h3>
-                <p>Займ под залог автомобиля.</p>
+                <!-- <h3>Займы</h3> -->
+                <p class="lead">Займ под залог автомобиля</p>
               </div>
             </div>
           </div>
@@ -282,6 +281,11 @@
     <script type="text/javascript">
       $(function () {
         var scroll = new SmoothScroll('a[href*="#section-"]');
+
+				$('.carousel').carousel({
+				  interval: 3000
+				});
+
 
 			  var form = $('.contact_form'),
 			      message = $('.contact_msg'),

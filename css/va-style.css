@@ -1,14 +1,4 @@
-@media only screen and (max-width: 768px) {
-  .jumbotron {
-    background: none;
-    min-height: 100vh;
-  }
-  #section-description{
-    background: none;
-  }
-}
-
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .navbar .navbar-nav {
     width: 100%;
     text-align: center;
@@ -29,7 +19,7 @@
   }
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 1000px) {
     .navbar-brand {
         display: none;
     }
@@ -42,6 +32,16 @@
   .rules_ol{
     font-size: 1.0rem;
     line-height: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbotron {
+    background: none;
+    min-height: 100vh;
+  }
+  #section-description{
+    background: none;
   }
 }
 
@@ -79,6 +79,9 @@ nav{
 
 .navbar-brand{
   margin-left: 10px;
+}
+.nav-link{
+  min-width: 105px;
 }
 .nav-tel{
 	font-size: 0.8rem;
@@ -155,10 +158,31 @@ nav{
   width: 80%; 
 }
 
-#carousel{
-  color: #000;
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23663300' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  width: 50px;
 }
 
-.carousel-control span.glyphicon {
-    color: red;
+.carousel-control-next-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23663300' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+ width: 50px;
+}
+
+
+.carousel-caption {
+    width:100%;
+    left:0 !important;
+    top:79% !important;
+    color: #663300;
+    text-shadow: 0 2px 2px #fff;
+    text-shadow: 0 -2px 2px #fff;
+    text-shadow: 2px 0px 2px #fff;
+    text-shadow: -2px 0px 2px #fff;
+    z-index: 99;
+}
+
+.carousel-caption p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.0rem;
 }
